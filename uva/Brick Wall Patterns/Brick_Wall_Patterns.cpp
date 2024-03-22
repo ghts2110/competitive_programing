@@ -25,10 +25,7 @@ ll dp(int n){
 int main(){
     memset(memo, -1, sizeof memo);
     int n;
-    while(cin >> n){
-        if(!n){
-            break;
-        }
+    while(cin >> n && n != 0){
 
         cout << dp(n) << endl;
     }
